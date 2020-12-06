@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inventory/generated/l10n.dart';
 
 class Recover extends StatelessWidget{
   @override

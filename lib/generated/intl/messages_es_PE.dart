@@ -1,0 +1,44 @@
+// DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
+// This is a library that provides messages for a es_PE locale. All the
+// messages from the main program should be duplicated here with the same
+// function name.
+
+// Ignore issues from commonly used lints in this file.
+// ignore_for_file:unnecessary_brace_in_string_interps, unnecessary_new
+// ignore_for_file:prefer_single_quotes,comment_references, directives_ordering
+// ignore_for_file:annotate_overrides,prefer_generic_function_type_aliases
+// ignore_for_file:unused_import, file_names
+
+import 'package:intl/intl.dart';
+import 'package:intl/message_lookup_by_library.dart';
+
+final messages = new MessageLookup();
+
+typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
+
+class MessageLookup extends MessageLookupByLibrary {
+  String get localeName => 'es_PE';
+
+  final messages = _notInlinedMessages(_notInlinedMessages);
+  static _notInlinedMessages(_) => <String, Function> {
+    "addText" : MessageLookupByLibrary.simpleMessage("Añadir"),
+    "dateText" : MessageLookupByLibrary.simpleMessage("Fecha de Nacimiento: DD/MM/AAAA"),
+    "descriptionText" : MessageLookupByLibrary.simpleMessage("\nIngrese el correo electrónico que \nutilizó para registrarse y \nle enviaremos instrucciones para \nrestablecer su contraseña"),
+    "descriptionsText" : MessageLookupByLibrary.simpleMessage("Descripción"),
+    "emailText" : MessageLookupByLibrary.simpleMessage("Correo Electronico o Celular"),
+    "enterCreateText" : MessageLookupByLibrary.simpleMessage("Crear una Nueva Cuenta"),
+    "enterPassText" : MessageLookupByLibrary.simpleMessage("Introduzca su contraseña"),
+    "enterText" : MessageLookupByLibrary.simpleMessage("Ingresar"),
+    "furnitureText" : MessageLookupByLibrary.simpleMessage("Añadir un Mobiliario"),
+    "inventoryText" : MessageLookupByLibrary.simpleMessage("Control de Inventario"),
+    "lastText" : MessageLookupByLibrary.simpleMessage("Apellidos(s)"),
+    "name1Text" : MessageLookupByLibrary.simpleMessage("Nombres(s)"),
+    "nameText" : MessageLookupByLibrary.simpleMessage("Inventory"),
+    "passwordText" : MessageLookupByLibrary.simpleMessage("Contraseña"),
+    "quiz1Text" : MessageLookupByLibrary.simpleMessage("¿Olvidaste tu contraseña?"),
+    "quizText" : MessageLookupByLibrary.simpleMessage("¿Olvidaste tu contraseña?"),
+    "recoverText" : MessageLookupByLibrary.simpleMessage("Recuperar Contraseña"),
+    "registerText" : MessageLookupByLibrary.simpleMessage("Registrarse"),
+    "starText" : MessageLookupByLibrary.simpleMessage("Inicio de \n Sesión")
+  };
+}

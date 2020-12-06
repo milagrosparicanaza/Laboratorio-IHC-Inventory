@@ -1,0 +1,25 @@
+{
+  "starText": "Conecte-se",
+  "emailText" : "Email ou número de telefone",
+  "passwordText": "Senha",
+  "enterText": "Enterokay",
+  "registerText": "Check-in",
+  "quizText": "Você esqueceu sua senha?",
+
+  "nameText": "Inventory",
+  "descriptionText": "Digite o e-mail que você usou \npara se registrar e nós enviaremos \ninstruções para redefinir sua senha",
+  "recoverText": "Recuperar Senha",
+  "quiz1Text": "Você esqueceu sua senha?",
+
+  "name1Text": "Nome(s)",
+  "lastText": "Sobrenome(s)",
+  "dateText": "Data de Nascimento: DD/MM/AAAA",
+  "enterPassText": "\nColoque sua senha",
+  "enterCreateText": "Criar uma nova conta",
+
+  "furnitureText": "Adicionar uma mobília",
+  "addText": "Adicionar",
+  "descriptionsText": "Descrições",
+  "inventoryText": "Controle de Inventário"
+
+}

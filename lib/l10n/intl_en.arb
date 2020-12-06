@@ -1,0 +1,25 @@
+{
+  "starText": "Login",
+  "emailText" : "Email or Phone Number",
+  "passwordText": "Password",
+  "enterText": "Enter",
+  "registerText": "Register",
+  "quizText": "¿Forget your password?",
+
+  "nameText": "Inventory",
+  "descriptionText": "Enter the email you used to \nregister and we will send you \ninstructions to reset your password",
+  "recoverText": "Recover Password",
+  "quiz1Text": "¿Olvidaste tu contraseña?",
+
+  "name1Text": "Name(s)",
+  "lastText": "Last Name(s)",
+  "dateText": "Date of birth: DD/MM/AAAA",
+  "enterPassText": "Enter your password",
+  "enterCreateText": "Create A New Account",
+
+  "furnitureText": "Add a Furniture",
+  "addText": "Add",
+  "descriptionsText": "Descriptions",
+  "inventoryText": "Inventory Control"
+
+}

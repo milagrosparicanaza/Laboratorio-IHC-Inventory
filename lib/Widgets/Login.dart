@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:inventory/generated/l10n.dart';
+
 
 class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    title: "Login";
+    title: S.of(context).starText;
     return Scaffold(
         backgroundColor: Colors.black,
         body: Container(
@@ -28,7 +30,7 @@ class Login extends StatelessWidget {
                           child: Container(
                             margin: EdgeInsets.only(top:50),
                             child: Center(
-                              child: Text("Login", style: TextStyle(color:Colors.white, fontSize: 50, fontWeight: FontWeight.bold),),
+                              child: Text(S.of(context).starText , style: TextStyle(color:Colors.white, fontSize: 50, fontWeight: FontWeight.bold),),
                             ),
                           ),
                         )
@@ -62,7 +64,7 @@ class Login extends StatelessWidget {
                                   child: TextField(
                                     decoration: InputDecoration(
                                         border: InputBorder.none,
-                                        hintText: "Correo o Número de Celular",
+                                        hintText: S.of(context).emailText,
                                         hintStyle: TextStyle(color: Colors.grey[400])
                                     ),
                                   ),
@@ -72,7 +74,7 @@ class Login extends StatelessWidget {
                                   child: TextField(
                                     decoration: InputDecoration(
                                         border: InputBorder.none,
-                                        hintText: "Contraseña",
+                                        hintText: S.of(context).passwordText,
                                         hintStyle: TextStyle(color: Colors.grey[400])
                                     ),
                                   ),
@@ -93,7 +95,7 @@ class Login extends StatelessWidget {
                               height: 100,
 
                               child: Center(
-                                child: Text("Ingresar",
+                                child: Text(S.of(context).enterText,
                                     textAlign: TextAlign.center),
                               ),
                             ),
@@ -114,14 +116,14 @@ class Login extends StatelessWidget {
                               height: 100,
 
                               child: Center(
-                                child: Text("Registrarse",
+                                child: Text(S.of(context).registerText,
                                     textAlign: TextAlign.center),
                               ),
                             ),
                           ),
                         ),
                         SizedBox(height: 30,),
-                        Text("¿Olvidaste tu contraseña?", style: TextStyle(color: Color.fromRGBO(143, 148, 251, 1)),),
+                        Text(S.of(context).quizText, style: TextStyle(color: Color.fromRGBO(143, 148, 251, 1)),),
                         FlatButton(
                           child: new Text('Flat Button'),
                             onPressed: () {Navigator.pushNamed(context, "/tree");},

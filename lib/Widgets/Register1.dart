@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';import 'package:flutter/material.dart';
+import 'package:inventory/generated/l10n.dart';
 
 void main() {
   runApp(MyApp());
