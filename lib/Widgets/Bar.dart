@@ -70,7 +70,7 @@ class _BarraState extends State<Barra> {
             leading: Icon(Icons.bubble_chart_outlined),
             onTap: () {
               Navigator.of(context).pop();
-              Navigator.pushNamed(context, '/donut');
+              Navigator.pushNamed(context, '/lineChart');
             },
           ),
 
