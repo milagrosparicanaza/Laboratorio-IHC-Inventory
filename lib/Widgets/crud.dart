@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:inventory/generated/l10n.dart';
-
-void main() => runApp(MaterialApp(
-  theme: ThemeData(
-    brightness: Brightness.light,
-    accentColor: Colors.black,
-  ),
-  home: Crud(),
-));
+import 'Bar.dart';
 
 class Crud extends StatefulWidget {
   @override
@@ -39,11 +32,12 @@ class _MyAppState extends State<Crud> {
     return Scaffold(
       backgroundColor: Colors.transparent,
       appBar: AppBar(
-        leading: Icon(Icons.menu),
-        title: Text(S.of(context).inventoryText),
-        elevation: 0.0,
-        backgroundColor: Colors.transparent,
-      ),
+          title: Text(S.of(context).inventoryText),
+          elevation: 0.0,
+          backgroundColor: Colors.transparent),
+
+      //Llamamos a la clase barra donde esta nuestro drower con la lista.
+      drawer: Barra(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: FloatingActionButton(
         child: Icon(
