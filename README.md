@@ -2,6 +2,16 @@
 
 Una apliación en Flutter
 
+#### Grupo conformado por:
+
+```
+- RODRIGUEZ MERCADO JOSE				   
+- JAIRO MIGUEL CASTILLO ROJAS			   
+- CHAVEZ NINA BRAULIO ARMANDO 			   
+- PARICANAZA CHULLUNQUIA MILAGROS GRISELL         
+
+```
+
 ## Requerimientos
 ```
 
@@ -49,3 +59,4 @@ dependencies:
 ### Grafica Ejemplo 
 
 ![](assets/images/grafica.jpg)
+
