@@ -20,6 +20,8 @@
   "furnitureText": "Add a Furniture",
   "addText": "Add",
   "descriptionsText": "Descriptions",
-  "inventoryText": "Inventory Control"
-
+  "inventoryText": "Inventory Control",
+  
+  "reportTextBarChart": "Report Users",
+  "monthly expenses":"monthly expenses"
 }

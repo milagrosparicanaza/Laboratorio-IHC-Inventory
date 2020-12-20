@@ -6,246 +6,122 @@ class Recover extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.black,
+        resizeToAvoidBottomPadding: false,
         body: Container(
-            child: Column(
-                children: <Widget>[
-                  Container(
-                    height: 30,
-                    width: 30,
-                  ),
-                  Container(
-                    height: 200,
-                    width: 400,
-                    child: Stack(
-                      children: <Widget>[
-                        Positioned(
-                          child: Container(
-                            margin: EdgeInsets.only(top: 50),
-                            child: Center(
-                              child: Text(S
-                                  .of(context)
-                                  .nameText, style: TextStyle(color: Colors
-                                  .deepPurple,
-                                  fontSize: 50,
-                                  fontWeight: FontWeight.bold),),
-                            ),
-                          ),
-                        ),
-                      ],
+            child: Column(children: <Widget>[
+          Container(
+            height: 30,
+            width: 30,
+          ),
+          Container(
+            height: 200,
+            width: 400,
+            child: Stack(
+              children: <Widget>[
+                Positioned(
+                  child: Container(
+                    margin: EdgeInsets.only(top: 50),
+                    child: Center(
+                      child: Text(
+                        S.of(context).nameText,
+                        style: TextStyle(
+                            color: Colors.deepPurple,
+                            fontSize: 50,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.all(30.0),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.all(30.0),
+            child: Column(
+              children: <Widget>[
+                Center(
+                  child: Text(
+                    S.of(context).quizText,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 10,
+                ),
+                Center(
+                  child: Text(
+                    S.of(context).descriptionText,
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+                Container(
+                  height: 10,
+                ),
+                Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(10),
+                        boxShadow: [
+                          BoxShadow(
+                              color: Color.fromRGBO(143, 148, 251, 0.2),
+                              blurRadius: 20.0,
+                              offset: Offset(0, 10))
+                        ]),
                     child: Column(
                       children: <Widget>[
-                        Center(child: Text(S.of(context).quizText,
-                          style: TextStyle(color:Colors.white, fontWeight: FontWeight.bold,fontSize: 25,),),),
                         Container(
-                          height: 10,
-                        ),
-                        Center(child: Text(S.of(context).descriptionText,
-                          style: TextStyle(color:Colors.grey, fontSize: 20,),),),
-                        Container(
-                          height: 10,
-                        ),
-                        Container(
-                            padding: EdgeInsets.all(5),
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(10),
-                                boxShadow: [
-                                  BoxShadow(
-                                      color: Color.fromRGBO(143, 148, 251, 0.2),
-                                      blurRadius: 20.0,
-                                      offset: Offset(0, 10)
-                                  )
-                                ]
-                            ),
-                            child: Column(
-                              children: <Widget>[
-                                Container(
-                                  padding: EdgeInsets.all(8.0),
-                                  decoration: BoxDecoration(
-                                      border: Border(bottom: BorderSide(
-                                          color: Colors.grey[100]))
-                                  ),
-                                  child: TextField(
-                                    decoration: InputDecoration(
-                                        border: InputBorder.none,
-                                        hintText: S
-                                            .of(context)
-                                            .emailText,
-                                        hintStyle: TextStyle(
-                                            color: Colors.grey[400])
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            )
-                        ),
-                        SizedBox(height: 30,),
-                        Container(
-                          height: 50,
-                          child: RaisedButton(
-                            color: Colors.white,
-                            shape: new RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10.0)),
-                            onPressed: () {
-                              Navigator.pushNamed(context, "/four");
-                            },
-                            child: SizedBox(
-                              width: 200,
-                              height: 100,
-
-                              child: Center(
-                                child: Text(S
-                                    .of(context)
-                                    .recoverText,
-                                    textAlign: TextAlign.center),
-                              ),
-                            ),
+                          padding: EdgeInsets.all(8.0),
+                          decoration: BoxDecoration(
+                              border: Border(
+                                  bottom: BorderSide(color: Colors.grey[100]))),
+                          child: TextField(
+                            decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText: S.of(context).emailText,
+                                hintStyle: TextStyle(color: Colors.grey[400])),
                           ),
                         ),
-                        Container(
-                          height: 10,
-                        ),
-                        SizedBox(height: 30,),
                       ],
-                    ),
-                  )
-                ]
-            )
-        )
-    );
-  }
-}
-/*class MyHomePage extends StatefulWidget{
-  @override
-  _MyHomePageState createState()=> _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage>{
-  TextEditingController user=TextEditingController();
-  bool _validate = false;
-  @override
-  Widget build(BuildContext context){
-    return Scaffold(
-      resizeToAvoidBottomPadding: false,
-
-      body:Container(
-        color: Colors.black,
-        child:Column(
-          children: <Widget>[
-            Row(
-              children: <Widget>[
-                Expanded(child: Text(" ")),
-              ],
-            ),
-            Row(
-              children: <Widget>[
-                IconButton(
-                  icon: Icon(Icons.arrow_back,color: Colors.white,),
-                  onPressed: _add,
-                )
-              ],
-            ),
-            Container(
-              height: 20,
-              width: 20,
-            ),
-            Container(
-              child: Stack(
-                children: <Widget>[
-                  Positioned(
-                    child: Container(
-                      margin: EdgeInsets.only(top:50),
-                      child: Center(
-                        child: Text("Inventory", style: TextStyle(color:Colors.deepPurpleAccent, fontSize: 50, fontWeight: FontWeight.bold),),
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              height: 20,
-              width: 20,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Center(child: Text("¿Olvidaste tu clave?\n",style: TextStyle(color:Colors.white, fontWeight: FontWeight.bold,fontSize: 30,),),),
-
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Center(child: Text("Ingresa el correo electronico que\n utilizaste para registrarte y te\n enviaremos instrucciones para\n restablecer tu clave\n\n",style: TextStyle(color:Colors.grey, fontSize: 20,),),),
-
-              ],
-            ),
-            /*Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Expanded(
-                  child: TextFormField(
-                  controller: user,
-                  style: TextStyle(color:Colors.black, fontWeight: FontWeight.bold,fontSize: 15,) ,
-                  decoration:InputDecoration(
-                      filled: true,
-                      hintText: " Correo Electronico",
-                      contentPadding: new EdgeInsets.symmetric(vertical: 20.0, horizontal: 5.0),
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0)),
-                      fillColor: Colors.white),
-                ),),
-              ],
-            ),*/
-            Container(
-              width: 250,
-                padding: EdgeInsets.all(5),
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                          color: Color.fromRGBO(143, 148, 251, 0.2),
-                          blurRadius: 20.0,
-                          offset: Offset(0,10)
-                      )
-                    ]
+                    )),
+                SizedBox(
+                  height: 30,
                 ),
-                child: Column(
-                  children: <Widget>[
-                    Container(
-                      padding: EdgeInsets.all(6.0),
-                      child: TextField(
-                        decoration: InputDecoration(
-                            border: InputBorder.none,
-                            hintText: "Correo Electronico",
-                            hintStyle: TextStyle(color: Colors.grey[600])
-                        ),
+                Container(
+                  height: 50,
+                  child: RaisedButton(
+                    color: Colors.white,
+                    shape: new RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0)),
+                    onPressed: () {
+                      Navigator.pushNamed(context, "/four");
+                    },
+                    child: SizedBox(
+                      width: 200,
+                      height: 100,
+                      child: Center(
+                        child: Text(S.of(context).recoverText,
+                            textAlign: TextAlign.center),
                       ),
                     ),
-                  ],
-                )
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Center(child: MaterialButton(
-                  minWidth: 200.0,
-                  height: 40.0,
-                  onPressed: (){},
-                  child: Text('Recuperar Clave',style: TextStyle(color:Colors.white, fontWeight: FontWeight.bold,fontSize: 25,),),),),
+                  ),
+                ),
+                Container(
+                  height: 10,
+                ),
+                SizedBox(
+                  height: 30,
+                ),
               ],
             ),
-          ],
-        ),
-      ),
-    );
+          )
+        ])));
   }
-  void _add(){
-    print("hola");
-  }
-}*/
+}

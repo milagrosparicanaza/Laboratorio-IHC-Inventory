@@ -224,6 +224,18 @@ class S {
       args: [],
     );
   }
+
+  /// `Report Users`
+  String get reportTextBarChart {
+    return Intl.message(
+      'Report Users',
+      name: 'reportTextBarChart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  // skipped getter for the 'monthly expenses' key
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -20,5 +20,8 @@
   "furnitureText": "Añadir un Mobiliario",
   "addText": "Añadir",
   "descriptionsText": "Descripción",
-  "inventoryText": "Control de Inventario"
+  "inventoryText": "Control de Inventario",
+  
+  "reportTextBarChart": "Reporte de Usuarios",  
+  "monthly expenses":"Gastos Mensais"
 }

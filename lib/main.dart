@@ -8,7 +8,6 @@ import 'package:inventory/Widgets/Register.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:inventory/generated/l10n.dart';
 
-
 import 'Widgets/FusionCharts.dart';
 import 'Widgets/Perfil.dart';
 import 'Widgets/crud.dart';
@@ -16,10 +15,11 @@ import 'Widgets/pieChart.dart';
 
 void main() => runApp(InventoryApp());
 
-class InventoryApp extends StatelessWidget{
+class InventoryApp extends StatelessWidget {
   @override
-  Widget build (BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       localizationsDelegates: [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
@@ -32,7 +32,7 @@ class InventoryApp extends StatelessWidget{
         '/one': (context) => Login(),
         '/two': (context) => Registro(),
         '/tree': (context) => Recover(),
-        '/four': (context) => Crud(),
+        '/crud': (context) => Crud(),
         '/perfil': (context) => Perfil(),
         '/barChart': (context) => ChartsDemo(),
         '/histograma': (context) => Histograma(),

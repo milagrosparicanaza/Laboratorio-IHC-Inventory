@@ -18,7 +18,7 @@ class _BarraState extends State<Barra> {
             ),
             accountName: Text('Braulio Chavez'),
             accountEmail: Text('bchavezn@unsa.edu.pe'),
-            currentAccountPicture: Image.asset('assets/images/user01.jpeg'),
+            currentAccountPicture: Image.asset('assets/images/user01.png'),
           ),
           ListTile(
             autofocus: true,
@@ -44,7 +44,7 @@ class _BarraState extends State<Barra> {
           //Grafico 1
           ListTile(
             autofocus: true,
-            title: Text('Grafico 01'),
+            title: Text('Grafico Resporte Usuarios'),
             leading: Icon(Icons.analytics),
             onTap: () {
               Navigator.of(context).pop();
@@ -55,8 +55,8 @@ class _BarraState extends State<Barra> {
           //Grafico 02
           ListTile(
             autofocus: true,
-            title: Text('Grafico 02'),
-            leading: Icon(Icons.broken_image_outlined),
+            title: Text('Grafico Reporte Gastos'),
+            leading: Icon(Icons.analytics),
             onTap: () {
               Navigator.of(context).pop();
               Navigator.pushNamed(context, '/histograma');
@@ -66,8 +66,8 @@ class _BarraState extends State<Barra> {
           //Grafico 03
           ListTile(
             autofocus: true,
-            title: Text('Grafico 03'),
-            leading: Icon(Icons.bubble_chart_outlined),
+            title: Text('Grafico Venta Producto'),
+            leading: Icon(Icons.broken_image_outlined),
             onTap: () {
               Navigator.of(context).pop();
               Navigator.pushNamed(context, '/lineChart');
@@ -77,8 +77,8 @@ class _BarraState extends State<Barra> {
           //Grafico 04
           ListTile(
             autofocus: true,
-            title: Text('Grafico 04'),
-            leading: Icon(Icons.analytics),
+            title: Text('Grafico Inventario'),
+            leading: Icon(Icons.bubble_chart_outlined),
             onTap: () {
               Navigator.of(context).pop();
               Navigator.pushNamed(context, '/pieChart');
@@ -88,8 +88,8 @@ class _BarraState extends State<Barra> {
           //Grafico 05
           ListTile(
             autofocus: true,
-            title: Text('Grafico 05'),
-            leading: Icon(Icons.analytics),
+            title: Text('Grafico Ingreso Productos'),
+            leading: Icon(Icons.broken_image_outlined),
             onTap: () {
               Navigator.of(context).pop();
               Navigator.pushNamed(context, '/fusionChart');

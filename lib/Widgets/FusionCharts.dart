@@ -1,5 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'Bar.dart';
 
 class FusionChart extends StatefulWidget {
   @override
@@ -21,8 +22,9 @@ class FusionChartState extends State<FusionChart> {
         appBar: AppBar(
           centerTitle: true,
           backgroundColor: Colors.black,
-          title: Text('FusionChart'),
+          title: Text('Ingreso de Productos'),
         ),
+        drawer: Barra(),
         body: AspectRatio(
           aspectRatio: 1.1,
           child: Container(
@@ -76,7 +78,7 @@ class FusionChartState extends State<FusionChart> {
                         child: LineChart(
                           isShowingMainData ? sampleData1() : sampleData2(),
                           swapAnimationDuration:
-                          const Duration(milliseconds: 250),
+                              const Duration(milliseconds: 250),
                         ),
                       ),
                     ),
@@ -89,7 +91,7 @@ class FusionChartState extends State<FusionChart> {
                   icon: Icon(
                     Icons.refresh,
                     color:
-                    Colors.white.withOpacity(isShowingMainData ? 1.0 : 0.5),
+                        Colors.white.withOpacity(isShowingMainData ? 1.0 : 0.5),
                   ),
                   onPressed: () {
                     setState(() {

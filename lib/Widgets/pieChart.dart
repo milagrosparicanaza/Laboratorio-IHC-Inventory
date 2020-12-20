@@ -1,5 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'Bar.dart';
 
 class PieChartPage extends StatefulWidget {
   @override
@@ -14,8 +15,9 @@ class PieChartPageState extends State {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.black,
-        title: Text('CircularChart'),
+        title: Text('Inventario de Productos'),
       ),
+      drawer: Barra(),
       body: Card(
         child: Column(
           children: <Widget>[
@@ -58,43 +60,43 @@ class PieChartPageState extends State {
 List<PieChartSectionData> getSections(int touchedIndex) => PieData.data
     .asMap()
     .map<int, PieChartSectionData>((index, data) {
-  final isTouched = index == touchedIndex;
-  final double fontSize = isTouched ? 25 : 16;
-  final double radius = isTouched ? 100 : 80;
+      final isTouched = index == touchedIndex;
+      final double fontSize = isTouched ? 25 : 16;
+      final double radius = isTouched ? 100 : 80;
 
-  final value = PieChartSectionData(
-    color: data.color,
-    value: data.percent,
-    title: '${data.percent}%',
-    radius: radius,
-    titleStyle: TextStyle(
-      fontSize: fontSize,
-      fontWeight: FontWeight.bold,
-      color: const Color(0xffffffff),
-    ),
-  );
+      final value = PieChartSectionData(
+        color: data.color,
+        value: data.percent,
+        title: '${data.percent}%',
+        radius: radius,
+        titleStyle: TextStyle(
+          fontSize: fontSize,
+          fontWeight: FontWeight.bold,
+          color: const Color(0xffffffff),
+        ),
+      );
 
-  return MapEntry(index, value);
-})
+      return MapEntry(index, value);
+    })
     .values
     .toList();
 
 class IndicatorsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Column(
-    crossAxisAlignment: CrossAxisAlignment.start,
-    children: PieData.data
-        .map(
-          (data) => Container(
-          padding: EdgeInsets.symmetric(vertical: 2),
-          child: buildIndicator(
-            color: data.color,
-            text: data.name,
-            // isSquare: true,
-          )),
-    )
-        .toList(),
-  );
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: PieData.data
+            .map(
+              (data) => Container(
+                  padding: EdgeInsets.symmetric(vertical: 2),
+                  child: buildIndicator(
+                    color: data.color,
+                    text: data.name,
+                    // isSquare: true,
+                  )),
+            )
+            .toList(),
+      );
 
   Widget buildIndicator({
     @required Color color,
@@ -132,9 +134,15 @@ class PieData {
         name: 'Material de Limpieza',
         percent: 40,
         color: const Color(0xff0293ee)),
-    Data(name: 'Camaje ', percent: 30, color: const Color(0xfff8b250)),
-    Data(name: 'Black', percent: 15, color: Colors.black),
-    Data(name: 'Green', percent: 15, color: const Color(0xff13d38e)),
+    Data(
+        name: 'Material Mobiliario ',
+        percent: 30,
+        color: const Color(0xfff8b250)),
+    Data(name: 'Uniformes de Empleados', percent: 15, color: Colors.black),
+    Data(
+        name: 'Material de Oficina',
+        percent: 15,
+        color: const Color(0xff13d38e)),
   ];
 }
 

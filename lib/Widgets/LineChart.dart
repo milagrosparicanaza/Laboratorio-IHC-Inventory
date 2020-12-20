@@ -1,5 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'Bar.dart';
 
 class LinealChart extends StatefulWidget {
   @override
@@ -20,8 +21,9 @@ class LinealChartState extends State<LinealChart> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.black,
-        title: Text('LinealChart'),
+        title: Text('Venta de Productos'),
       ),
+      drawer: Barra(),
       body: Stack(
         children: <Widget>[
           Column(
@@ -84,7 +86,7 @@ class LinealChartState extends State<LinealChart> {
                 style: TextStyle(
                     fontSize: 12,
                     color:
-                    showAvg ? Colors.white.withOpacity(0.5) : Colors.white),
+                        showAvg ? Colors.white.withOpacity(0.5) : Colors.white),
               ),
             ),
           ),
@@ -183,7 +185,7 @@ class LinealChartState extends State<LinealChart> {
           belowBarData: BarAreaData(
             show: true,
             colors:
-            gradientColors.map((color) => color.withOpacity(0.3)).toList(),
+                gradientColors.map((color) => color.withOpacity(0.3)).toList(),
           ),
         ),
       ],

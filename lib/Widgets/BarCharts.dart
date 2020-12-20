@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:inventory/generated/l10n.dart';
+import 'Bar.dart';
 
 class ChartsDemo extends StatefulWidget {
   ChartsDemo() : super();
-  final String title = "Report Users";
 
   @override
   ChartsDemoState createState() => ChartsDemoState();
@@ -57,8 +58,12 @@ class ChartsDemoState extends State<ChartsDemo> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        backgroundColor: Colors.black87,
+        title: Text(
+          S.of(context).reportTextBarChart,
+        ),
       ),
+      drawer: Barra(),
       body: Container(
         padding: EdgeInsets.all(20.0),
         child: barChart(),

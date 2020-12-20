@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "quizText" : MessageLookupByLibrary.simpleMessage("¿Forget your password?"),
     "recoverText" : MessageLookupByLibrary.simpleMessage("Recover Password"),
     "registerText" : MessageLookupByLibrary.simpleMessage("Register"),
+    "reportTextBarChart" : MessageLookupByLibrary.simpleMessage("Report Users"),
     "starText" : MessageLookupByLibrary.simpleMessage("Login")
   };
 }

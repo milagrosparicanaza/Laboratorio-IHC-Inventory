@@ -8,6 +8,7 @@ class Login extends StatelessWidget {
     Text(S.of(context).starText);
     return Scaffold(
         backgroundColor: Colors.black,
+        resizeToAvoidBottomPadding: false,
         body: Container(
             child: Column(children: <Widget>[
           Container(
@@ -90,7 +91,7 @@ class Login extends StatelessWidget {
                     shape: new RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0)),
                     onPressed: () {
-                      Navigator.pushNamed(context, "/four");
+                      Navigator.pushNamed(context, "/crud");
                     },
                     child: SizedBox(
                       width: 300,
