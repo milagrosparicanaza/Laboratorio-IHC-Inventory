@@ -19,25 +19,29 @@ class _HistogramaState extends State<Histograma> {
         body: Center(
             child: Container(
                 child: SfCartesianChart(
-                  // Initialize category axis
+                    // Initialize category axis
                     primaryXAxis: CategoryAxis(),
                     series: <BarSeries<SalesData, String>>[
-                      BarSeries<SalesData, String>(
-                        // Bind data source
-                          dataSource: <SalesData>[
-                            SalesData('Jan', 35),
-                            SalesData('Feb', 28),
-                            SalesData('Mar', 34),
-                            SalesData('Apr', 32),
-                            SalesData('Jun', 12),
-                            SalesData('Jul', 25),
-                            SalesData('Aug', 32),
-                            SalesData('Sep', 17)
-                          ],
-                          xValueMapper: (SalesData sales, _) => sales.year,
-                          yValueMapper: (SalesData sales, _) => sales.sales,
-                          dataLabelSettings: DataLabelSettings(isVisible: true)),
-                    ]))));
+              BarSeries<SalesData, String>(
+                  // Bind data source
+                  dataSource: <SalesData>[
+                    SalesData('En', 20000),
+                    SalesData('Feb', 15000),
+                    SalesData('Mar', 15800),
+                    SalesData('Abr', 18300),
+                    SalesData('May', 23600),
+                    SalesData('Jun', 22300),
+                    SalesData('Jul', 19200),
+                    SalesData('Ago', 13800),
+                    SalesData('Sep', 18600),
+                    SalesData('Oct', 21300),
+                    SalesData('Nov', 22800),
+                    SalesData('Dic', 15800),
+                  ],
+                  xValueMapper: (SalesData sales, _) => sales.year,
+                  yValueMapper: (SalesData sales, _) => sales.sales,
+                  dataLabelSettings: DataLabelSettings(isVisible: true)),
+            ]))));
   }
 }
 

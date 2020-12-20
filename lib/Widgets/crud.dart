@@ -14,18 +14,14 @@ class _MyAppState extends State<Crud> {
 
   void initState() {
     super.initState();
-    todos.add("Sábana bajera      03 uds");
-    todos.add("Funda Nordica      42 uds");
-    todos.add("Funda Almohadas    11 uds");
-    todos.add("Toallas baño       12 uds");
-    todos.add("Toallas mano       02 uds");
-    todos.add("Alfombrín          34 uds");
-    todos.add("Toallas Bidé       22 uds");
-    todos.add("Toallas Cara       02 uds");
-    todos.add("Camas Unitario     11 uds");
-    todos.add("Escobas Baño       43 uds");
-    todos.add("Escobas Cuarto     22 uds");
-    todos.add("Trapeador          25 uds");
+    todos.add("Sábana bajera      03 uds    \nS/.30.00 c/u");
+    todos.add("Funda Nordica      42 uds \nS/.10.00 c/u");
+    todos.add("Funda Almohadas    11 uds \nS/.20.00 c/u");
+    todos.add("Toallas baño       12 uds \nS/.22.00 c/u");
+    todos.add("Toallas mano       02 uds \nS/.33.00 c/u");
+    todos.add("Alfombrín          34 uds \nS/.56.00 c/u");
+    todos.add("Toallas Bidé       22 uds \nS/.31.00 c/u");
+    todos.add("Toallas Cara       02 uds \nS/.56.00 c/u");
   }
 
   Widget build(BuildContext context) {
